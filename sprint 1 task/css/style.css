@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+	font-family: "Segoe UI";
+	src: url(../fonts/Segoe_UI.ttf);
+}
+@font-face {
+	font-family: "Samo Sans";
+	src: url(../fonts/SamoSansPro-Hair.ttf);
+}
+@font-face {
+	font-family: "St Ryde Regular";
+	src: url(../fonts/stryde-regular.otf);
+}
+@font-face {
+	font-family: "Sofia Pro Light";
+	src: url("../fonts/Sofia Pro Light.ttf");
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 650px;
+}
+.header{
+  /* border: 2px solid blueviolet; */
+  display: flex; 
+  min-width: inherit;
+  width: 76%;
+  min-height: 70px;
+  max-height: 130px;
+  height: 12vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+.menu{
+  width: 60%;
+  font-size: 19px;
+  font-family: "Samo Sans", sans-serif;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+ul li{
+  list-style: none;
+  
+}
+.header a{
+  /* color: rgb(95, 95, 95); */
+  color: #82699d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+}
+.header a img{
+  margin-right: 10px;
+}
+.logo a{
+  font-size: 39px;
+  text-transform: uppercase;
+  font-family: "Samo Sans", sans-serif;
+}
+.slider{
+  /* border: 2px solid blueviolet; */
+  display: flex; 
+  min-width: inherit;
+  width: 76%;
+  height: 70vh;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../images/slider-image.png) no-repeat center; 
+  min-height: 485px;
+  background-size: cover;
+  margin-bottom: 3vh;
+}
+
+.arrows {
+  background-color: rgb(130, 105, 157);
+  width: 34px;
+  height: 65px;
+  z-index: 45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-text{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.slider h1{
+  font-size: 117px;
+  font-family: "StRydeRegular";
+  color: rgba(255, 255, 255, 0.969);
+  line-height: 0.308;
+  text-align: center;
+  text-shadow: 0px 6px 0px rgba(130, 105, 157, 0.75);
+  font-family: "Segoe UI";
+}
+.slider h2{
+  font-size: 31px;
+  font-family: "SofiaProLight";
+  color: rgb(255, 255, 255);
+  line-height: 1.161;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.45);
+  font-family: "St Ryde Regular";
+}
+.text-block{
+  width: 76%;
+  font-size: 23px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;  
+  align-content: center;
+  margin-bottom: 3vh;
+}
+.text-block hr{
+  color: #bfbfbf;
+  width: 100%;
+}
+.text-block p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  font-size: 23px;
+  font-family: "Sofia Pro Light";
+  color: #494848;
+  font-style: italic;
+  line-height: 1.565;
+}
+.text-block span{
+  font-size: 23px;
+  font-family: "Sofia Pro Light";
+  color: rgb(130, 105, 157);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.565;
+}
+.picture-text-block{
+  /* border: 1px solid black; */
+  width: 76%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+  font-family: "Segoe UI";
+}
+.picture-block{
+  margin-right: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture-block .circle{
+   position: absolute; 
+}
+.picture-text-block .text{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.picture-text-block h3{
+  font-size: 31px;
+  font-family: "Segoe UI";
+  color: rgb(80, 80, 81);
+  font-weight: bold;
+  line-height: 1.161;
+  text-align: left;
+  margin-bottom: 20px; 
+}
+.picture-text-block p{
+  font-size: 15px;
+  font-family: "Segoe UI";
+  color: rgb(131, 131, 131);
+  line-height: 1.867;
+  text-align: left;
+}
+.read-more{
+  text-decoration: none;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-family: "Segoe UI";
+  color: rgb(131, 131, 131);
+  font-style: italic;
+  line-height: 2.769;
+}
+.read-more img{
+  margin-left: 5px;
+  size: initial;
+}
+.featured-line{
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.featured-line span{
+  font-size: 23px;
+  font-family: "Segoe UI";
+  color: rgb(0, 0, 0);
+  line-height: 1.565;
+  flex-shrink: 0;
+}
+.featured-line span span{   
+  font-size: 23px;
+  font-family: "Segoe UI";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.565;
+}
+.line-wrap{
+  width: 65%;
+  height: 10px;
+  background: url(../images/featured-line.png) no-repeat center;
+  background-size: cover;
+  flex-shrink: 3;
+}
+.clients{
+  width: 76%;
+  display: flex;
+  margin-bottom: 3vh;
+}
+.clients div{
+  width: 25%;
+  height: 60px;
+  border: 1px solid #e4e4e4;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.footer-inner{
+  display: flex;
+  width: 76%;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-inner p{
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  font-family: "Segoe UI";
+}
+.footer-inner img{
+  margin-left: 10px;
+}
+.border-line{
+  width: 100%;
+  height: 7px;
+  background-color: #82699d;
+}
+a:hover{
+  transform: scale(1.2, 1.2);
+  text-shadow: 0px 1px 1px grey;
+}
+.arrows:hover{
+  opacity: 0.5;
+}

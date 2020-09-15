@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table{
+  width: 60vh;
+  height: 60vh;
+  border: 1px solid black;
+  border-spacing: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+table td{
+  background-color: white;
+  border: 1px solid black;
+}
+
+table .black{
+  background-color: grey;
+}
+
+button{
+  width: 45%;
+  margin-top: 1vh;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
+
+button :active{
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+button:hover{
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.buttons-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.reversed td{
+  background-color: grey;
+}
+
+.reversed .black{
+  background-color: white;
+}
